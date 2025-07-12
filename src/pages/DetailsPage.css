@@ -1,0 +1,134 @@
+.details-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #646cff;
+  transform: translateY(-2px);
+}
+
+.details-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.details-poster {
+  flex: 0 0 300px;
+}
+
+.details-poster img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.details-info {
+  flex: 1;
+}
+
+.details-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.details-tagline {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.details-meta {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+
+.details-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.details-section {
+  margin-bottom: 2rem;
+}
+
+.details-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.details-section p {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.homepage-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #646cff 0%, #7c3aed 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.homepage-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(100, 108, 255, 0.3);
+}
+
+.details-loading,
+.details-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .details-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .details-poster {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .details-title {
+    font-size: 2.2rem;
+  }
+}
